@@ -1,0 +1,23 @@
+<?php
+	$Number_of_film = 36;
+
+	$List_Film = array();
+	
+	for($i = 0; $i < $Number_of_film; $i++)
+		//Show with display : none; with id = x;
+	
+	$id_page = 1;
+?>
+
+<srcipt>
+	var maxShow = 10;
+	var i = $id_page;
+	var j = $id_page + maxShow;
+	
+	var id = "";
+	for (; i < j; i++)	{
+		id += i;
+		$("#" + id).css("display","block");
+		id = "";
+	}
+</script>
